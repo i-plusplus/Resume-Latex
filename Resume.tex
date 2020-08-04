@@ -1,0 +1,235 @@
+\documentclass[10.5pt,a4paper]{article}
+\usepackage{titlesec}
+\usepackage{titling}
+\usepackage{multicol}
+\usepackage{url}
+\usepackage{printlen}
+\usepackage{geometry}
+\usepackage{lipsum}
+\usepackage{xcolor}
+\usepackage{hyperref}
+
+\geometry{
+ a4paper,
+ left=0mm,
+ top=10mm,
+ bottom=10mm,
+}
+\AtBeginDocument{\hypersetup{pdfborder={0 0 0}}}
+\setlength{\columnsep}{.5cm}
+
+\setlength\textwidth{\dimexpr(\paperwidth-1in)}
+\setlength\oddsidemargin{\dimexpr(\paperwidth-\textwidth)/2 - 1in\relax}
+\setlength\evensidemargin{\oddsidemargin}
+
+\pagestyle{empty}
+
+
+\definecolor{lightcyan}{rgb}{0.94, 1.0, 1.0}
+\definecolor{gray(x11gray)}{rgb}{0.25, 0.5, 0.5}
+\definecolor{gry(y11gray)}{rgb}{0.5, 0.5, 0.5}
+\definecolor{gry(z11gray)}{rgb}{0,0,0}
+%%%%%%%%%%%%%%%%%%%%% commands %%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\timeandlocation}{\small\color{gry(y11gray)}\bfseries\\}
+\newcommand{\expsec}[1]{\flushleft\large\bfseries\flushleft{#1}}
+\newcommand{\expsubsec}[1]{\small\bfseries{[#1]}}
+\newcommand{\desc}[1]{\normalsize\begin{itemize}\item{#1}\end{itemize}}
+\newcommand{\sections}{\color{gray(x11gray)}\Large\bfseries}
+%%%%%%%%%%%%%%%%%%%% end commands %%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%% title %%%%%%%%%%%%%%%%%%%%%%%
+
+
+\renewcommand{\maketitle}{
+\begin{center}
+{\Huge \bfseries
+\theauthor} \vspace{.25em} \\
+\colorbox{lightcyan}{
+\href{http://github.com/i-plusplus}{Github}{\textbar}\href{mailto:paras\_malik\_mca\_iit@yahoo.com}{paras\_malik\_mca\_iit\@yahoo.com}{\textbar}+917204537001{\textbar}Bangalore,IN
+} 
+\vspace{.5em}
+%\hrule
+\vspace{2em}
+\end{center}
+}
+
+%%%%%%%%%%%%%%%%%%%%% title end %%%%%%%%%%%%%%%%%%%%
+
+
+\titleformat{\section}
+{\color{gray(x11gray)}\Large\bfseries\uppercase}
+{}
+{0em}
+{}
+
+
+
+\titleformat{\subsection}[runin]
+{\bfseries\large}
+{}
+{0em}
+{}[:\hspace{1cm}]
+
+\titlespacing{\subsection}
+{0em}{.5em}{.5em}
+
+\titlespacing{\section}
+{0em}{0em}{0em}
+
+
+
+\begin{document}
+\title{R\'esum\'e}
+\author{Paras Malik}
+\maketitle
+\begin{multicols}{2}
+\setlength{\columnseprule}{0.4pt}
+%\begin{minipage}{0,.5\textwidth}
+\begin{section}{Technical Skills}
+\end{section}
+\begin{color}{gray(x11gray)}\hrule\end{color}
+\vspace{5mm}
+\subsection{Programming/Scripting Languages}
+Java, Golang, Python, C/C++, Bash Scripting, R, Javascript
+\subsection{Databases/Caching Technologies}
+Redis, HBase, Aerospike, Mysql, Mssql, Memcache, Cassandra
+\subsection{Big Data Solutions}
+Hive, Hadoop, Spark/Py-spark/Spark Structured Streaming
+\subsection{Machine Learning Techniques}
+Statistical Modeling, UCB, XGBoost, LightGBM, Random Forest, FM, FFM, LDA, NaiveBayesClassifier
+\subsection{Messaging Systems}
+Kafka
+\subsection{Search Technologies}
+ES, Lucene
+\subsection{CICD}
+Docker, Jenkins
+\subsection{Other Technologies}
+Tomcat, SOA(Service Discovery, Client side load balancing), AWS(Auto-scaling/S3/ELB/EBS/Machine Selection/Placement Groups)
+\vspace{4mm}
+\begin{section}{Experience}
+\end{section}
+\begin{color}{gray(x11gray)}\hrule\end{color}
+\vspace{5mm}
+\begin{expsec}{Media.Net}
+\end{expsec}
+\begin{expsubsec}{Sr. EM{\textbar}Sr. Tech Lead{\textbar}Sr. SDE}
+\end{expsubsec}
+\begin{timeandlocation}Jan 2014 - Present{\textbar}Bangalore
+\end{timeandlocation}
+\begin{desc}{Lead a team of 15 SE/Dev-ops/DS/DB engineers to build end to end solution for bidding in RTB auctions}
+\end{desc}
+\begin{expsec}{Amazon.com}
+\end{expsec}
+\begin{expsubsec}{Software Development Engineer}
+\end{expsubsec}
+\begin{timeandlocation}Oct 2010 - Dec 2013{\textbar}Bangalore
+\end{timeandlocation}
+\begin{desc}{Developed Java services for Kindle registration and book lending}
+\end{desc}
+\begin{desc}{Developed Amazon Instant Video Living room client applications using Java}
+\end{desc}
+\begin{expsec}{Directi}
+\end{expsec}
+\begin{expsubsec}{Software Development Engineer}
+\end{expsubsec}
+\begin{timeandlocation}June 2010 - Oct 2010{\textbar}Mumbai
+\end{timeandlocation}
+\begin{desc}{Developed Implemented caching for java application using JNI}
+\end{desc}
+\vspace{4mm}
+\begin{section}{Education}
+\end{section}
+\begin{color}{gray(x11gray)}\hrule\end{color}
+\vspace{5mm}
+\begin{expsec}{Masters in Computer Application}
+\end{expsec}
+\begin{expsubsec}{Indian Institute of Technology{\textbar}2010}
+\end{expsubsec}
+\begin{expsec}{Bachelors in Computer Application}
+\end{expsec}
+\begin{expsubsec}{Panjab University, Chandigarh{\textbar}2007}
+\end{expsubsec}
+\vspace{30mm}
+\begin{section}{Projects}
+\end{section}
+\begin{color}{gray(x11gray)}\hrule\end{color}
+\vspace{5mm}
+\begin{expsec}{RTB Bidder Service}
+\end{expsec}
+\begin{expsubsec}{Java{\textbar}Redis{\textbar}Aerospike}
+\end{expsubsec}
+\begin{desc}{Developed \& Maintained a complex API to compute and deliver 1/2 Million bids per second for RTB auctions.}
+\end{desc}
+\begin{expsec}{Realtime Configuration Manager}
+\end{expsec}
+\begin{expsubsec}{Mysql{\textbar}Kafka{\textbar}Java}
+\end{expsubsec}
+\begin{desc}{Developed system which update 100s of 1000s of frequently changing configurations to production in realtime}
+\end{desc}
+\begin{expsec}{ML Model Computation Service}
+\end{expsec}
+\begin{expsubsec}{Golang{\textbar}S3{\textbar}Redis{\textbar}LightGBM{\textbar}Catboost{\textbar}Consul{\textbar}Java}
+\end{expsubsec}
+\begin{desc}{Developed low latency Golang service to compute various ML model.}
+\end{desc}
+\begin{desc}{Used Consul for service discovery in autoscaled environment using hetrogenous hosts. }
+\end{desc}
+\begin{desc}{Built intelligent Java client with capablity of WRR}
+\end{desc}
+\begin{expsec}{Event Stream Syncronization \& Processing}
+\end{expsec}
+\begin{expsubsec}{Spark Structured Streaming{\textbar}Kafka}
+\end{expsubsec}
+\begin{desc}{Developed strcutred streaming application to time syncronize multiple streams of different events in different Kafka topics.}
+\end{desc}
+\begin{expsec}{Data Pipelines}
+\end{expsec}
+\begin{expsubsec}{Spark{\textbar}Hadoop{\textbar}oozi{\textbar}Mysql}
+\end{expsubsec}
+\begin{desc}{Developed complex data pipelines to process large amount of data}
+\end{desc}
+\begin{expsec}{SRE Projects}
+\end{expsec}
+\begin{expsubsec}{ELK{\textbar}Autoscaling}
+\end{expsubsec}
+\begin{desc}{Developed Autoscaling algorithm to add/remove hosts}
+\end{desc}
+\begin{expsec}{ML Projects}
+\end{expsec}
+\begin{desc}{Developed System to classify webpages as commercial non-commercial using LDA/NaiveBayes/XGBoost}
+\end{desc}
+\begin{desc}{Developed RPM/CTR Prediction models using LightGBM/Catboost/XGboost/Statistical Modeling}
+\end{desc}
+\begin{desc}{Developed Slideshow detection system which automatically identify if given page is part of slideshow.}
+\end{desc}
+\begin{desc}{Worked on UCB technique to explore new web pages}
+\end{desc}
+\begin{expsec}{Redis to RedisCluster Migration}
+\end{expsec}
+\begin{expsubsec}{Redis{\textbar}RedisCluster{\textbar}Jedis}
+\end{expsubsec}
+\begin{desc}{Implemented functionality to handle pipeline requests in Jedis}
+\end{desc}
+\begin{desc}{Used different functionality to optimize RedisCluser}
+\end{desc}
+\begin{desc}{Benchmarked and controled migration}
+\end{desc}
+\begin{expsec}{HBase \& RedisCluster to Aerospike Migration}
+\end{expsec}
+\begin{expsubsec}{HBase{\textbar}Aerospike{\textbar}RedisCluster}
+\end{expsubsec}
+\begin{desc}{Defined Data model to enable migration in a cost efficient way.}
+\end{desc}
+
+
+
+%\end{minipage}
+
+
+
+
+
+\end{multicols}
+\end{document}
+
