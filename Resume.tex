@@ -1,4 +1,4 @@
-\documentclass[10.5pt,a4paper]{article}
+\documentclass[8pt,a4paper]{article}
 \usepackage{titlesec}
 \usepackage{titling}
 \usepackage{multicol}
@@ -8,12 +8,12 @@
 \usepackage{lipsum}
 \usepackage{xcolor}
 \usepackage{hyperref}
-
+\usepackage{enumitem}
 \geometry{
  a4paper,
  left=0mm,
- top=10mm,
- bottom=10mm,
+ top=5mm,
+ bottom=5mm,
 }
 \AtBeginDocument{\hypersetup{pdfborder={0 0 0}}}
 \setlength{\columnsep}{.5cm}
@@ -31,10 +31,10 @@
 \definecolor{gry(z11gray)}{rgb}{0,0,0}
 %%%%%%%%%%%%%%%%%%%%% commands %%%%%%%%%%%%%%%%%%%%%%%%%
 \newcommand{\timeandlocation}{\small\color{gry(y11gray)}\bfseries\\}
-\newcommand{\expsec}[1]{\flushleft\large\bfseries\flushleft{#1}}
-\newcommand{\expsubsec}[1]{\small\bfseries{[#1]}}
-\newcommand{\desc}[1]{\normalsize\begin{itemize}\item{#1}\end{itemize}}
-\newcommand{\sections}{\color{gray(x11gray)}\Large\bfseries}
+\newcommand{\expsec}[1]{\flushleft\fontsize{12}{12}\selectfont\bfseries{#1}}
+\newcommand{\expsubsec}[1]{\small\bfseries{#1}}
+\newcommand{\desc}[1]{\normalsize\begin{itemize}[noitemsep,nolistsep]\item{#1}\end{itemize}}
+\newcommand{\sections}{\color{gray(x11gray)}\small\bfseries}
 %%%%%%%%%%%%%%%%%%%% end commands %%%%%%%%%%%%%%%%%%%%%
 
 
@@ -46,11 +46,12 @@
 {\Huge \bfseries
 \theauthor} \vspace{.25em} \\
 \colorbox{lightcyan}{
-\href{http://github.com/i-plusplus}{Github}{\textbar}\href{mailto:paras\_malik\_mca\_iit@yahoo.com}{paras\_malik\_mca\_iit@yahoo.com}{\textbar}+917204537001{\textbar}Bangalore,IN
+\href{http://github.com/i-plusplus}{Github}{\textbar}\href{mailto:paras.sde@gmail.com}{paras.sde@gmail.com}{\textbar}+917204537001{\textbar}Bangalore,IN
 } 
+\\
+\normalsize{Machine Learning, Distributed Systems, Large Scale Systems, Big Data, Tech Leader}
+
 \vspace{.5em}
-%\hrule
-\vspace{2em}
 \end{center}
 }
 
@@ -66,13 +67,13 @@
 
 
 \titleformat{\subsection}[runin]
-{\bfseries\large}
+{\bfseries\small}
 {}
 {0em}
 {}[:\hspace{1cm}]
 
 \titlespacing{\subsection}
-{0em}{.5em}{.5em}
+{0em}{0em}{0em}
 
 \titlespacing{\section}
 {0em}{0em}{0em}
@@ -86,27 +87,6 @@
 \begin{multicols}{2}
 \setlength{\columnseprule}{0.4pt}
 %\begin{minipage}{0,.5\textwidth}
-\begin{section}{Technical Skills}
-\end{section}
-\begin{color}{gray(x11gray)}\hrule\end{color}
-\vspace{5mm}
-\subsection{Programming/Scripting Languages}
-Java, Golang, Python, C/C++, Bash Scripting, R, Javascript
-\subsection{Databases/Caching Technologies}
-Redis, HBase, Aerospike, Mysql, Mssql, Memcache, Cassandra
-\subsection{Big Data Solutions}
-Hive, Hadoop, Spark/Py-spark/Spark Structured Streaming
-\subsection{Machine Learning Techniques}
-Statistical Modeling, UCB, XGBoost, LightGBM, Random Forest, FM, FFM, LDA, NaiveBayesClassifier
-\subsection{Messaging Systems}
-Kafka
-\subsection{Search Technologies}
-ES, Lucene
-\subsection{CICD}
-Docker, Messos, Kubernetes, Jenkins
-\subsection{Other Technologies}
-Tomcat, SOA(Service Discovery, Client side load balancing), AWS(Auto-scaling/S3/ELB/EBS/Machine Selection/Placement Groups)
-\vspace{4mm}
 \begin{section}{Experience}
 \end{section}
 \begin{color}{gray(x11gray)}\hrule\end{color}
@@ -117,7 +97,17 @@ Tomcat, SOA(Service Discovery, Client side load balancing), AWS(Auto-scaling/S3/
 \end{expsubsec}
 \begin{timeandlocation}Jan 2014 - Present{\textbar}Bangalore
 \end{timeandlocation}
-\begin{desc}{Lead a team of 15 SE/Dev-ops/DS/DB engineers to build end to end solution for bidding in RTB auctions}
+\begin{desc}{Currently managing a multi discipline orgranization(Engineering, Data Science, Product) with over 20 people and 4 Leads across 2 different products and 2 locations}
+\end{desc}
+\begin{desc}{Responsible for building Keyword intelligence and Bidder for DSP platforms}
+\end{desc}
+\begin{desc}{Created realtime bidder that bid on 15 Billion requests, serving 100s of millions of impressions each day and generating 85 Million USD of annual revenue and 30 Million USD of annual profit for the company}
+\end{desc}
+\begin{desc}{My team consists of 20 brilliant SE/SRE/DS/PM/DB engineers who deliver quality projects with focus on performance, reliablity and business objectives}
+\end{desc}
+\begin{desc}{Responsible for Appraisals, Promotion recommendations, Ideation, Engineering, Product \& Project Management}
+\end{desc}
+\begin{desc}{Actively involved in hiring and mentoring}
 \end{desc}
 \begin{expsec}{Amazon.com}
 \end{expsec}
@@ -138,6 +128,31 @@ Tomcat, SOA(Service Discovery, Client side load balancing), AWS(Auto-scaling/S3/
 \begin{desc}{Developed Implemented caching for java application using JNI}
 \end{desc}
 \vspace{4mm}
+\begin{section}{Skills}
+\end{section}
+\begin{color}{gray(x11gray)}\hrule\end{color}
+\vspace{5mm}
+\subsection{Programming/Scripting Languages}
+Java, Golang, Python, C/C++, Bash Scripting, R, Javascript
+\subsection{Databases/Caching Technologies}
+Redis, HBase, Aerospike, Mysql, Mssql, Memcache, Cassandra
+\subsection{Big Data Solutions}
+Hive, Hadoop, Spark/Py-spark/Spark Structured Streaming
+\subsection{Machine Learning Techniques}
+Statistical Modeling, UCB, XGBoost, LightGBM, Random Forest, FM, FFM, LDA, NaiveBayesClassifier
+\subsection{Messaging Systems}
+Kafka
+\subsection{Search Technologies}
+ES, Lucene
+\subsection{CICD}
+Docker, Messos, Kubernetes, Jenkins
+\subsection{Management Skills}
+Product \& Project Management, Hiring, Team building \& scaling, Operational excellence
+\subsection{Other Technologies}
+Tomcat, SOA (Service Discovery, Client side load balancing), AWS(Auto-scaling/S3/ELB/EBS/Machine-Selection/Placement Groups)
+
+
+\vspace{4mm}
 \begin{section}{Education}
 \end{section}
 \begin{color}{gray(x11gray)}\hrule\end{color}
@@ -146,11 +161,7 @@ Tomcat, SOA(Service Discovery, Client side load balancing), AWS(Auto-scaling/S3/
 \end{expsec}
 \begin{expsubsec}{Indian Institute of Technology{\textbar}2010}
 \end{expsubsec}
-\begin{expsec}{Bachelors in Computer Application}
-\end{expsec}
-\begin{expsubsec}{Panjab University, Chandigarh{\textbar}2007}
-\end{expsubsec}
-\vspace{30mm}
+\vspace{4mm}
 \begin{section}{Projects}
 \end{section}
 \begin{color}{gray(x11gray)}\hrule\end{color}
@@ -173,19 +184,19 @@ Tomcat, SOA(Service Discovery, Client side load balancing), AWS(Auto-scaling/S3/
 \end{expsubsec}
 \begin{desc}{Developed low latency Golang service to compute various ML model.}
 \end{desc}
-\begin{desc}{Used Consul for service discovery in autoscaled environment using hetrogenous hosts. }
+\begin{desc}{Used Consul for service discovery in autoscaled environment using heterogeneous hosts. }
 \end{desc}
-\begin{desc}{Built intelligent Java client with capablity of WRR}
+\begin{desc}{Developed intelligent Java client with capability of WRR}
 \end{desc}
-\begin{expsec}{Event Stream Syncronization \& Processing}
+\begin{expsec}{Event Stream Synchronization \& Processing}
 \end{expsec}
 \begin{expsubsec}{Spark Structured Streaming{\textbar}Kafka}
 \end{expsubsec}
-\begin{desc}{Developed strcutred streaming application to time syncronize multiple streams of different events in different Kafka topics.}
+\begin{desc}{Developed structured streaming application to time synchronize multiple streams of different events in different Kafka topics.}
 \end{desc}
 \begin{expsec}{Data Pipelines}
 \end{expsec}
-\begin{expsubsec}{Spark{\textbar}Hadoop{\textbar}oozi{\textbar}Mysql}
+\begin{expsubsec}{Spark{\textbar}Hadoop{\textbar}Oozi{\textbar}Mysql}
 \end{expsubsec}
 \begin{desc}{Developed complex data pipelines to process large amount of data}
 \end{desc}
@@ -199,7 +210,7 @@ Tomcat, SOA(Service Discovery, Client side load balancing), AWS(Auto-scaling/S3/
 \end{desc}
 \begin{expsec}{ML Projects}
 \end{expsec}
-\begin{desc}{Developed System to classify webpages as commercial non-commercial using LDA/NaiveBayes/XGBoost}
+\begin{desc}{Developed System to classify web pages as commercial non-commercial using LDA/NaiveBayes/XGBoost}
 \end{desc}
 \begin{desc}{Developed RPM/CTR Prediction models using LightGBM/Catboost/XGboost/Statistical Modeling}
 \end{desc}
@@ -215,7 +226,7 @@ Tomcat, SOA(Service Discovery, Client side load balancing), AWS(Auto-scaling/S3/
 \end{desc}
 \begin{desc}{Used different functionality to optimize RedisCluser}
 \end{desc}
-\begin{desc}{Benchmarked and controled migration}
+\begin{desc}{Benchmarked and controlled migration}
 \end{desc}
 \begin{expsec}{HBase \& RedisCluster to Aerospike Migration}
 \end{expsec}
